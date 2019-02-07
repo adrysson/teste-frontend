@@ -48,6 +48,7 @@ export default {
     }
   },
   mounted () {
+    this.$q.loading.show()
     this.$axios.get('http://localhost/teste-backend/api/v1/statistics/students/keep_studying.json')
       .then(response => {
         this.data = response.data
@@ -69,6 +70,9 @@ export default {
           message: 'Não foi possível carregar os dados',
           icon: 'report_problem'
         })
+      })
+      .then(() => {
+        this.$q.loading.hide()
       })
   },
   methods: {}
