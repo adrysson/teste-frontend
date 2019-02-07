@@ -40,5 +40,5 @@ Faça download clicando [aqui](https://github.com/SENAI-NTM/teste-backend/blob/m
 5. Se não conseguir finalizar os testes, não se preocupe, envie a sua solução no estágio de desenvolvimento que estiver.
 
 ## Instruções de instalação
-1. Tenha a API do teste front-end funcionando em /var/www/html/.
+1. Tenha a API do teste front-end funcionando em /var/www/html/teste-frontend/api/.
 2. Execute o arquivo index.html da raiz do projeto.
