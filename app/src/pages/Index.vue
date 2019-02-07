@@ -1,5 +1,5 @@
 <template>
-  <q-page>
+  <q-page v-if="Object.entries(data).length">
     <div class="heading grid" align="center">
         <h1>Relatório</h1>
         <legend>Ex-alunos de SENAI que continuam estudando</legend>
@@ -8,7 +8,7 @@
         <bar-chart :width="800" :height="300" :chart-data="datacollection"></bar-chart>
     </div>
     <div class="footer" align="center">
-      <p class="national">Nacional: {{data.national.toFixed(2)}}</p>
+      <p class="national">Nacional: {{data ? data.national.toFixed(2) : ''}}</p>
     </div>
   </q-page>
 </template>
@@ -44,7 +44,7 @@ export default {
   data () {
     return {
       datacollection: null,
-      data: null
+      data: {}
     }
   },
   mounted () {
