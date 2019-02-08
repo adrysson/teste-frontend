@@ -42,13 +42,12 @@ Faça download clicando [aqui](https://github.com/SENAI-NTM/teste-backend/blob/m
 ## Instruções antes da instalação
 Antes de rodar o projeto, suba o servidor da API, voce pode fazê-lo das seguintes formas:
 1. Colocando na pasta padrão (localhost);
-2. Subindo com o servidor do PHP (na pasta "api" do projeto, execute o comando "php -S localhost:8080" e a api estará disponível em localhost:8000);
-3. Subindo com o servidor do CakePHP (na pasta "api" do projeto, execute o comando "bin/cake server" e a api estará disponível em localhost:8765).
-Se subir o servidor com as duas últimas opções, lembre-se de dar permissão 777 para as pastas "tmp" e "log" ("sudo chmod -R 777 tmp logs").
+2. Subindo com o servidor do CakePHP (na pasta "api" do projeto, execute o comando "bin/cake server" e a api estará disponível em localhost:8765).
+Se subir o servidor com a última opção, lembre-se de dar permissão 777 para as pastas "tmp" e "log" ("sudo chmod -R 777 tmp logs").
 
 ## Instruções de instalação
 1. Entre na pasta "app" do projeto.
 2. Suba o servidor de desenvolvimento com o comando "SERVER_BASE=raiz_da_api quasar dev"
 3. O projeto estará rodando em "localhost:8080"
 
-OBS: em "raiz_da_api" colocar o caminho da raiz da api, seja ele "localhost:8000", "localhost:8765" ou "localhost/teste-backend/api".
+OBS: em "raiz_da_api" colocar o caminho da raiz da api, seja ele "localhost:8765" ou "localhost/teste-backend/api".
