@@ -49,7 +49,7 @@ export default {
   },
   mounted () {
     this.$q.loading.show()
-    this.$axios.get('http://localhost/teste-backend/api/v1/statistics/students/keep_studying.json')
+    this.$axios.get(`${process.env.API}/v1/statistics/students/keep_studying.json`)
       .then(response => {
         this.data = response.data
         this.datacollection = {

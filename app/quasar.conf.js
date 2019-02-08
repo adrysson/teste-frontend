@@ -20,7 +20,10 @@ module.exports = function (ctx) {
     supportIE: true,
     build: {
       scopeHoisting: true,
-      // vueRouterMode: 'history',
+      vueRouterMode: 'history',
+      env: {
+        API: JSON.stringify(process.env.SERVER_BASE ? `http://${process.env.SERVER_BASE}` : 'http://localhost/teste-backend/api')
+      },
       // vueCompiler: true,
       // gzip: true,
       // analyze: true,
